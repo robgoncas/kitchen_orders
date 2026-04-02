@@ -1,0 +1,12 @@
+{
+    "version": 2,
+    "builds": [
+        // Indica que app.js es el punto de entrada y 
+        // que se debe usar el builder de Node.js
+        { "src": "app.js", "use": "@vercel/node" }
+    ],
+    "routes": [
+        // Redirige todas las solicitudes a app.js
+        { "src": "/(.*)", "dest": "app.js" }
+    ]
+}

@@ -18,7 +18,7 @@ const iniciar = async () => {
     await sequelize.authenticate();
     await sequelize.sync();
     console.log('Base de datos conectada - ok');
-    app.listen(3000, () => console.log('Servidor corriendo en http://localhost:3000'));
+    //app.listen(3000, () => console.log('Servidor corriendo en http://localhost:3000'));
   } catch (e) {
     console.error(e);
   }
